@@ -1,0 +1,198 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{55E5B3B0-9DA3-4FE0-833A-AD80DA056B68}</ProjectGuid>
+    <RootNamespace>game</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.15063.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="jin_exeprop.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="jin_exeprop.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="jin_exeprop.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="jin_exeprop.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <TargetName>nodab</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <TargetName>nodab</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <TargetName>nodab</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <TargetName>nodab</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\..\game\;$(projectDir)..\..\engine\;$(ProjectDir)..\..\external\SDL2\include\;$(ProjectDir)..\..\external\glew\include\;$(ProjectDir)..\..\external\SOIL\include\;$(ProjectDir)..\..\external\freetype\include\;$(ProjectDir)..\..\external\assimp\include\;$(ProjectDir)..\..\external\imgui\include\;$(ProjectDir)..\..\external\json\</AdditionalIncludeDirectories>
+      <TreatWarningAsError>false</TreatWarningAsError>
+    </ClCompile>
+    <Link>
+      <AdditionalLibraryDirectories>$(ProjectDir)..\..\external\gentleidiots\lib\$(PlatformTarget)\;$(ProjectDir)..\..\external\SDL2\lib\$(PlatformTarget)\;$(ProjectDir)..\..\external\glew\lib\$(PlatformTarget)\;$(ProjectDir)..\..\external\SOIL\lib\$(PlatformTarget)\;$(ProjectDir)..\..\external\freetype\lib\$(PlatformTarget)\;$(ProjectDir)..\..\external\assimp\lib\$(PlatformTarget)\</AdditionalLibraryDirectories>
+      <AdditionalDependencies>opengl32.lib;SDL2.lib;gentleidiots.lib;glew32.lib;SOIL.lib;freetype26.lib;assimp-vc140-mt.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <PreBuildEvent>
+      <Command>copy /Y /B "$(ProjectDir)..\..\external\SDL2\lib\$(PlatformTarget)\SDL2.dll" "$(OutDir)"
+copy /Y /B "$(ProjectDir)..\..\external\assimp\lib\$(PlatformTarget)\assimp-vc140-mt.dll" "$(OutDir)"
+copy /Y /B "$(ProjectDir)..\..\external\glew\lib\$(PlatformTarget)\glew32.dll" "$(OutDir)"
+copy /Y /B "$(ProjectDir)..\..\external\dll\x86\fmod.dll" "$(OutDir)"
+copy /Y /B "$(ProjectDir)..\..\external\dll\x64\fmod64.dll" "$(OutDir)"</Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\..\game\;$(projectDir)..\..\engine\;$(ProjectDir)..\..\external\SDL2\include\;$(ProjectDir)..\..\external\glew\include\;$(ProjectDir)..\..\external\SOIL\include\;$(ProjectDir)..\..\external\freetype\include\;$(ProjectDir)..\..\external\assimp\include\;$(ProjectDir)..\..\external\imgui\include\;$(ProjectDir)..\..\external\json\</AdditionalIncludeDirectories>
+      <TreatWarningAsError>false</TreatWarningAsError>
+    </ClCompile>
+    <Link>
+      <AdditionalLibraryDirectories>$(ProjectDir)..\..\external\gentleidiots\lib\$(PlatformTarget)\;$(ProjectDir)..\..\external\SDL2\lib\$(PlatformTarget)\;$(ProjectDir)..\..\external\glew\lib\$(PlatformTarget)\;$(ProjectDir)..\..\external\SOIL\lib\$(PlatformTarget)\;$(ProjectDir)..\..\external\freetype\lib\$(PlatformTarget)\;$(ProjectDir)..\..\external\assimp\lib\$(PlatformTarget)\</AdditionalLibraryDirectories>
+      <AdditionalDependencies>opengl32.lib;SDL2.lib;gentleidiots.lib;glew32.lib;SOIL.lib;freetype26.lib;assimp-vc140-mt.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <PreBuildEvent>
+      <Command>copy /Y /B "$(ProjectDir)..\..\external\SDL2\lib\$(PlatformTarget)\SDL2.dll" "$(OutDir)"
+copy /Y /B "$(ProjectDir)..\..\external\assimp\lib\$(PlatformTarget)\assimp-vc140-mt.dll" "$(OutDir)"
+copy /Y /B "$(ProjectDir)..\..\external\glew\lib\$(PlatformTarget)\glew32.dll" "$(OutDir)"
+copy /Y /B "$(ProjectDir)..\..\external\dll\x86\fmod.dll" "$(OutDir)"
+copy /Y /B "$(ProjectDir)..\..\external\dll\x64\fmod64.dll" "$(OutDir)"</Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\..\game\;$(projectDir)..\..\engine\;$(ProjectDir)..\..\external\SDL2\include\;$(ProjectDir)..\..\external\glew\include\;$(ProjectDir)..\..\external\SOIL\include\;$(ProjectDir)..\..\external\freetype\include\;$(ProjectDir)..\..\external\assimp\include\;$(ProjectDir)..\..\external\imgui\include\;$(ProjectDir)..\..\external\json\</AdditionalIncludeDirectories>
+      <TreatWarningAsError>false</TreatWarningAsError>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>$(ProjectDir)..\..\external\gentleidiots\lib\$(PlatformTarget)\;$(ProjectDir)..\..\external\SDL2\lib\$(PlatformTarget)\;$(ProjectDir)..\..\external\glew\lib\$(PlatformTarget)\;$(ProjectDir)..\..\external\SOIL\lib\$(PlatformTarget)\;$(ProjectDir)..\..\external\freetype\lib\$(PlatformTarget)\;$(ProjectDir)..\..\external\assimp\lib\$(PlatformTarget)\</AdditionalLibraryDirectories>
+      <AdditionalDependencies>opengl32.lib;SDL2.lib;gentleidiots.lib;glew32.lib;SOIL.lib;freetype26.lib;assimp-vc140-mt.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <PreBuildEvent>
+      <Command>copy /Y /B "$(ProjectDir)..\..\external\SDL2\lib\$(PlatformTarget)\SDL2.dll" "$(OutDir)"
+copy /Y /B "$(ProjectDir)..\..\external\assimp\lib\$(PlatformTarget)\assimp-vc140-mt.dll" "$(OutDir)"
+copy /Y /B "$(ProjectDir)..\..\external\glew\lib\$(PlatformTarget)\glew32.dll" "$(OutDir)"
+copy /Y /B "$(ProjectDir)..\..\external\dll\x86\fmod.dll" "$(OutDir)"
+copy /Y /B "$(ProjectDir)..\..\external\dll\x64\fmod64.dll" "$(OutDir)"</Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\..\game\;$(projectDir)..\..\engine\;$(ProjectDir)..\..\external\SDL2\include\;$(ProjectDir)..\..\external\glew\include\;$(ProjectDir)..\..\external\SOIL\include\;$(ProjectDir)..\..\external\freetype\include\;$(ProjectDir)..\..\external\assimp\include\;$(ProjectDir)..\..\external\imgui\include\;$(ProjectDir)..\..\external\json\</AdditionalIncludeDirectories>
+      <TreatWarningAsError>false</TreatWarningAsError>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>$(ProjectDir)..\..\external\gentleidiots\lib\$(PlatformTarget)\;$(ProjectDir)..\..\external\SDL2\lib\$(PlatformTarget)\;$(ProjectDir)..\..\external\glew\lib\$(PlatformTarget)\;$(ProjectDir)..\..\external\SOIL\lib\$(PlatformTarget)\;$(ProjectDir)..\..\external\freetype\lib\$(PlatformTarget)\;$(ProjectDir)..\..\external\assimp\lib\$(PlatformTarget)\</AdditionalLibraryDirectories>
+      <AdditionalDependencies>opengl32.lib;SDL2.lib;gentleidiots.lib;glew32.lib;SOIL.lib;freetype26.lib;assimp-vc140-mt.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <PreBuildEvent>
+      <Command>copy /Y /B "$(ProjectDir)..\..\external\SDL2\lib\$(PlatformTarget)\SDL2.dll" "$(OutDir)"
+copy /Y /B "$(ProjectDir)..\..\external\assimp\lib\$(PlatformTarget)\assimp-vc140-mt.dll" "$(OutDir)"
+copy /Y /B "$(ProjectDir)..\..\external\glew\lib\$(PlatformTarget)\glew32.dll" "$(OutDir)"
+copy /Y /B "$(ProjectDir)..\..\external\dll\x86\fmod.dll" "$(OutDir)"
+copy /Y /B "$(ProjectDir)..\..\external\dll\x64\fmod64.dll" "$(OutDir)"</Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ProjectReference Include="engine.vcxproj">
+      <Project>{50a52347-c042-4ed6-bf4e-842930fc60b0}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\game\game_behaviors.cpp" />
+    <ClCompile Include="..\..\game\Main.cpp" />
+    <ClCompile Include="..\..\game\Player.cpp" />
+    <ClCompile Include="..\..\game\TestScene.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\game\game_behaviors.h" />
+    <ClInclude Include="..\..\game\Player.h" />
+    <ClInclude Include="..\..\game\TestScene.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

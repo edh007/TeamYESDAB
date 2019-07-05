@@ -1,0 +1,285 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClInclude Include="..\..\engine\framework\Application.h">
+      <Filter>framework</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\engine\framework\Debug.h">
+      <Filter>framework</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\engine\framework\Macros.h">
+      <Filter>framework</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\engine\math\Math.h">
+      <Filter>math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\engine\Engine.h" />
+    <ClInclude Include="..\..\engine\math\Vector3.h">
+      <Filter>math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\engine\math\Matrix3.h">
+      <Filter>math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\engine\math\Vector4.h">
+      <Filter>math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\engine\math\Matrix4.h">
+      <Filter>math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\engine\math\Quaternion.h">
+      <Filter>math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\engine\math\MathUtil.h">
+      <Filter>math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\engine\framework\Timer.h">
+      <Filter>framework</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\engine\base\SceneHandler.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\engine\base\Scene.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\engine\GentleIdiots.h" />
+    <ClInclude Include="..\..\engine\framework\Input.h">
+      <Filter>framework</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\engine\graphics\Renderer.h">
+      <Filter>graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\engine\graphics\Camera.h">
+      <Filter>graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\engine\graphics\Mesh.h">
+      <Filter>graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\engine\graphics\Shader.h">
+      <Filter>graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\engine\graphics\Model.h">
+      <Filter>graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\engine\graphics\ShaderManager.h">
+      <Filter>graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\engine\base\Message.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\engine\base\System.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\engine\graphics\Light.h">
+      <Filter>graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\engine\graphics\Skybox.h">
+      <Filter>graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\engine\graphics\GuiManager.h">
+      <Filter>graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\engine\base\Component.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\engine\base\ComponentContainer.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\engine\base\Space.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\engine\base\EntityFactory.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\engine\base\ComponentFactory.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\engine\base\Entity.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\engine\math\Vec2.h">
+      <Filter>math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\engine\base\ComponentCamera.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\engine\base\Behavior.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\engine\framework\SoundManager.h">
+      <Filter>framework</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\engine\base\Entity.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\engine\graphics\ParticleComponent.h">
+      <Filter>graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\engine\components\ComponentModel.h">
+      <Filter>components</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\engine\components\ComponentPhysics.h">
+      <Filter>components</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\engine\components\ComponentTransform.h">
+      <Filter>components</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\engine\components\RigidBodyComponent.h">
+      <Filter>components</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\engine\base\CollisionManager.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\engine\components\ComponentText.h">
+      <Filter>components</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="framework">
+      <UniqueIdentifier>{da35b0bd-5b1d-462a-b4d3-3528a6c4f46d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="math">
+      <UniqueIdentifier>{b2b72c90-9a1f-4e86-b8be-9bc02cf074a2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="base">
+      <UniqueIdentifier>{62403183-284c-4118-92ac-b8152b5e6b93}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="graphics">
+      <UniqueIdentifier>{60168d0c-30f5-4a2e-ac9c-f26394b1999a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="physics">
+      <UniqueIdentifier>{a1457ec1-d639-4b67-bdc7-b28f1eb78151}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="components">
+      <UniqueIdentifier>{c356f474-570d-4ec7-918d-f6237f046d04}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\engine\framework\Application.cpp">
+      <Filter>framework</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\engine\framework\Macros.cpp">
+      <Filter>framework</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\engine\framework\Debug.cpp">
+      <Filter>framework</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\engine\Engine.cpp" />
+    <ClCompile Include="..\..\engine\math\Vector3.cpp">
+      <Filter>math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\engine\math\Quaternion.cpp">
+      <Filter>math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\engine\math\Matrix3.cpp">
+      <Filter>math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\engine\math\Matrix4.cpp">
+      <Filter>math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\engine\math\MathUtil.cpp">
+      <Filter>math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\engine\math\Vector4.cpp">
+      <Filter>math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\engine\framework\Timer.cpp">
+      <Filter>framework</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\engine\base\SceneHandler.cpp">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\engine\framework\Input.cpp">
+      <Filter>framework</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\engine\graphics\Renderer.cpp">
+      <Filter>graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\engine\graphics\Camera.cpp">
+      <Filter>graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\engine\graphics\Mesh.cpp">
+      <Filter>graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\engine\graphics\Shader.cpp">
+      <Filter>graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\engine\graphics\Model.cpp">
+      <Filter>graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\engine\graphics\ShaderManager.cpp">
+      <Filter>graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\engine\graphics\Light.cpp">
+      <Filter>graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\engine\graphics\Skybox.cpp">
+      <Filter>graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\engine\graphics\GuiManager.cpp">
+      <Filter>graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\engine\base\Component.cpp">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\engine\base\ComponentContainer.cpp">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\engine\base\Entity.cpp">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\engine\base\EntityFactory.cpp">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\engine\base\ComponentFactory.cpp">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\engine\base\Space.cpp">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\engine\base\ComponentCamera.cpp">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\engine\base\Behavior.cpp">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\engine\graphics\imgui.cpp">
+      <Filter>graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\engine\graphics\imgui_draw.cpp">
+      <Filter>graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\engine\graphics\imgui_impl_sdl_gl3.cpp">
+      <Filter>graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\engine\graphics\imgui_demo.cpp">
+      <Filter>graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\engine\framework\SoundManager.cpp">
+      <Filter>framework</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\engine\base\Entity.cpp">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\engine\graphics\ParticleComponent.cpp">
+      <Filter>graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\engine\components\ComponentModel.cpp">
+      <Filter>components</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\engine\components\ComponentPhysics.cpp">
+      <Filter>components</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\engine\components\ComponentTransform.cpp">
+      <Filter>components</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\engine\components\RigidBodyComponent.cpp">
+      <Filter>components</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\engine\base\CollisionManager.cpp">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\engine\components\ComponentText.cpp">
+      <Filter>components</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
